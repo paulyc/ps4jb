@@ -1,7 +1,7 @@
 // https://gist.github.com/flatz/1055a8d7819c8478db1b464842582c9c
 #include <sys/types.h>
 #include <stddef.h>
-
+void __stack_chk_fail(){}
 struct module_segment
 {
     uint64_t addr;
