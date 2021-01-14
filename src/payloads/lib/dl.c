@@ -2,6 +2,8 @@
 #include <sys/types.h>
 #include <stddef.h>
 
+void __stack_chk_fail() {}
+
 struct module_segment
 {
     uint64_t addr;
